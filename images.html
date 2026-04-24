@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<style>
+     *{
+        background-color: rgb(255, 255, 255);
+    }
+
+    #links{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: right;
+        padding-top: 25px;
+        padding-right: 20px;
+
+    }
+
+    a {
+        color: rgb(80, 79, 79);
+        text-decoration: none;
+    }
+
+    a:hover{
+       
+        text-decoration: underline;
+
+    }
+
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 110px;
+        letter-spacing: -12px;
+    }
+
+    .blue {
+        color: #4285f4;
+    }
+    .red{
+        color: #ea4335;
+    }
+    .yellow{
+        color: #fbbc05;
+    }
+    .green{
+        color: #34a853;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #searchbox{
+        display: flex;
+        width: 500px;
+        padding: 12px 20px;
+        border-radius: 25px;
+        border: 1px solid gray;
+        outline: none;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #buttons{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 5px;
+       border-radius: 5px;
+       
+
+    }
+    
+    p{
+        color: #4285f4;
+        margin-top: -70px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+   
+    <div id="links">
+        <a href="index.html">Google Search</a>
+    </div>
+
+    <h1>
+        <span class="blue">G</span>
+        <span class="red">o</span>
+        <span class="yellow">o</span>
+        <span class="blue">g</span>
+        <span class="green">l</span>
+        <span class="red">e</span>
+    </h1>
+
+    <p>Images</p>
+    
+    <div class="container">
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search for images" id="searchbox">
+            <input type="hidden" name="tbm" value="isch">
+    
+            <div id="buttons">
+                <input type="submit" value="Search" id="buttons">
+            </div>
+    </div>
+        </form>
+
+   
+</body>
+</html>

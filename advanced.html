@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<style>
+    
+    input{
+        padding: 5px;
+    }
+
+    button{
+        grid-column: 2;
+        margin-left: 243px;
+        background-color: #4285f4;
+        color: white;
+    }
+
+    div{
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .blue {
+        color: #4285f4;
+    }
+    .red{
+        color: #ea4335;
+    }
+    .yellow{
+        color: #fbbc05;
+    }
+    .green{
+        color: #34a853;
+    }
+
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -4px;
+        margin-bottom: 50px;
+    }
+
+    label{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 50px;
+        font-size: 20px;
+        
+    }
+
+    #as{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ea4335;
+        padding-left: 50px;
+        margin-bottom: 80px;
+        font-size: 24px;
+    }
+
+    #aw{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 50px;
+        font-size: 22px;
+    }
+
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        text-decoration: none;
+        display: flex;
+        justify-content: right;
+        padding-right: 50px;
+        
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+   
+    <h1> 
+        <span class="blue">G</span>
+        <span class="red">o</span>
+        <span class="yellow">o</span>
+        <span class="blue">g</span>
+        <span class="green">l</span>
+        <span class="red">e</span>
+    </h1>
+
+    <a href="index.html">Google Search</a>
+
+    <p id="as">Advanced Search</p>
+
+     <p id="aw">Search images <br> with...</p>
+        <form id="advs" action="https://google.com/search">
+            <div>
+                <label for="as_q">All these words</label>
+                <input type="text" name="as_q" placeholder="All these words">
+            </div>
+
+            <div>
+                <label for="as_epq">This exact word or phrase</label>
+                <input type="text" name="as_epq" placeholder="This exact word or phrase">
+            </div>
+
+            
+            <div>
+                <label for="as_oq">Any of these words</label>
+                <input type="text" name="as_oq" placeholder="Any of these words">
+            </div>
+
+             <div>
+                <label for="as_eq">None of these words</label>
+                <input type="text" name="as_eq" placeholder= "None of these words">
+            </div>
+            
+            <div></div>
+            <button type="submit">Advanced Search</button>
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<style>
+    #links{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        gap: 50px;
+        justify-content: right;
+        padding-top: 20px;
+        padding-right: 10px;
+
+    }
+
+    a {
+        color: rgb(80, 79, 79);
+        text-decoration: none;
+    }
+
+    a:hover{
+       
+        text-decoration: underline;
+
+    }
+
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 110px;
+        letter-spacing: -12px;
+    }
+
+    .blue {
+        color: #4285f4;
+    }
+    .red{
+        color: #ea4335;
+    }
+    .yellow{
+        color: #fbbc05;
+    }
+    .green{
+        color: #34a853;
+    }
+/*--------------------------------------*/
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #searchbox{
+        display: flex;
+        width: 500px;
+        padding: 12px 20px;
+        border-radius: 25px;
+        border: 1px solid gray;
+        outline: none;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        gap: 15px;
+
+    }
+    
+</style>
+<body>
+    <div id="links">
+        <a href="images.html">Google Images</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
+    <h1>
+        <span class="blue"> G</span>
+        <span class="red"> o</span>
+        <span class="yellow"> o</span>
+        <span class="blue"> g</span>
+        <span class="green"> l</span>
+        <span class="red"> e</span>
+    </h1>
+
+    <div class="container">
+        <form action="https://google.com/search" >
+             <input type="text" name="q" id="searchbox" placeholder="Search">
+            
+             <div id="buttons">
+                <button type="submit" class="searchbt">Search</button>
+                <button type="submit" name="btnI">I'm feeling Lucky</button>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
